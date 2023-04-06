@@ -10,8 +10,8 @@ require (
 	github.com/gliderlabs/ssh v0.3.4
 	github.com/kr/pty v1.1.1
 	github.com/lucasb-eyer/go-colorful v1.2.0
-	github.com/muesli/termenv v0.15.0
-	golang.org/x/term v0.0.0-20210422114643-f5beecf764ed
+	github.com/muesli/termenv v0.15.1
+	golang.org/x/term v0.1.0
 )
 
 require (
@@ -24,6 +24,6 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
-	golang.org/x/crypto v0.0.0-20220307211146-efcb8507fb70 // indirect
+	golang.org/x/crypto v0.1.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 )
