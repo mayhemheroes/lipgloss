@@ -68,6 +68,31 @@ func mayhemit(data []byte) int {
                 otherStyle := lipgloss.NewStyle()
                 otherStyle.Inherit(testStyle)
                 return 0
+
+            case 7:
+                testString, _ := fuzzConsumer.GetString()
+
+                lipgloss.Size(testString)
+                return 0
+
+            default:
+                testString, _ := fuzzConsumer.GetString()
+                arrSize, _ := fuzzConsumer.GetInt()
+
+                var intArr []int
+                for i := 0; i < arrSize; i++ {
+                    temp, _ := fuzzConsumer.GetInt()
+                    intArr = append(intArr, temp)
+                }
+
+                var matchStyle lipgloss.Style
+                fuzzConsumer.GenerateStruct(&matchStyle)
+
+                var unmatchStyle lipgloss.Style
+                fuzzConsumer.GenerateStruct(&unmatchStyle)
+
+                lipgloss.StyleRunes(testString, intArr, matchStyle, unmatchStyle)
+                return 0
         }
     }
     return 0
