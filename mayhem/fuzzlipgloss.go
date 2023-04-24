@@ -16,35 +16,35 @@ func mayhemit(data []byte) int {
         fuzzConsumer := fuzz.NewConsumer(data)
         
         switch num {
-            // case 0:
-            //     testStringA, _ := fuzzConsumer.GetString()
-            //     testStringB, _ := fuzzConsumer.GetString()
-            //     testfloat, _ := fuzzConsumer.GetFloat64()
-            //     testPos := lipgloss.Position(testfloat)
+            case 0:
+                testStringA, _ := fuzzConsumer.GetString()
+                testStringB, _ := fuzzConsumer.GetString()
+                testfloat, _ := fuzzConsumer.GetFloat64()
+                testPos := lipgloss.Position(testfloat)
                 
-            //     lipgloss.JoinHorizontal(testPos, testStringA, testStringB)
-            //     return 0
+                lipgloss.JoinHorizontal(testPos, testStringA, testStringB)
+                return 0
 
-            // case 2:
-            //     testStringA, _ := fuzzConsumer.GetString()
-            //     testStringB, _ := fuzzConsumer.GetString()
-            //     testfloat, _ := fuzzConsumer.GetFloat64()
-            //     testPos := lipgloss.Position(testfloat)
+            case 2:
+                testStringA, _ := fuzzConsumer.GetString()
+                testStringB, _ := fuzzConsumer.GetString()
+                testfloat, _ := fuzzConsumer.GetFloat64()
+                testPos := lipgloss.Position(testfloat)
                 
-            //     lipgloss.JoinVertical(testPos, testStringA, testStringB)
-            //     return 0
+                lipgloss.JoinVertical(testPos, testStringA, testStringB)
+                return 0
 
-            // case 3:
-            //     testWidth, _ := fuzzConsumer.GetInt()
-            //     thestHeight, _ := fuzzConsumer.GetInt()
-            //     testfloat1, _ := fuzzConsumer.GetFloat64()
-            //     testfloat2, _ := fuzzConsumer.GetFloat64()
-            //     testString, _ := fuzzConsumer.GetString()
-            //     testhPos := lipgloss.Position(testfloat1)
-            //     testvPos := lipgloss.Position(testfloat2)
+            case 3:
+                testWidth, _ := fuzzConsumer.GetInt()
+                thestHeight, _ := fuzzConsumer.GetInt()
+                testfloat1, _ := fuzzConsumer.GetFloat64()
+                testfloat2, _ := fuzzConsumer.GetFloat64()
+                testString, _ := fuzzConsumer.GetString()
+                testhPos := lipgloss.Position(testfloat1)
+                testvPos := lipgloss.Position(testfloat2)
 
-            //     lipgloss.Place(testWidth, thestHeight, testhPos, testvPos, testString)
-            //     return 0
+                lipgloss.Place(testWidth, thestHeight, testhPos, testvPos, testString)
+                return 0
 
             case 4:
                 testStyle := lipgloss.NewStyle()
