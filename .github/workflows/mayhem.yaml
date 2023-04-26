@@ -59,7 +59,8 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile
+          - mayhem/fuzz_lipgloss_position.mayhemfile
+          - mayhem/fuzz_lipgloss_style.mayhemfile
 
     steps:
       - uses: actions/checkout@v3

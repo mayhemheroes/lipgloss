@@ -2,11 +2,11 @@
 project: lipgloss
 
 # Target name (should be unique within the project)
-target: fuzzlipgloss
+target: fuzz_lipgloss_style
 
 # List of commands used to test the target
 cmds:
 
     # Command used to start the target, "@@" is the input file
     # (when "@@" is omitted Mayhem defaults to stdin inputs)
-    - cmd: ./fuzzlipgloss.libfuzzer
+    - cmd: ./fuzz_lipgloss_style.libfuzzer
