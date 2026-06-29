@@ -1,0 +1,5 @@
+project: lipgloss
+target: fuzz_lipgloss_style
+cmds:
+  - cmd: /mayhem/fuzz_lipgloss_style
+    libfuzzer: true
